@@ -3,7 +3,7 @@ package com.grid.streaming
 import kafka.serializer.StringDecoder
 import org.apache.spark.streaming._
 import org.apache.spark.streaming.kafka.KafkaUtils
-import org.apache.spark.{SparkConf, SparkContext};
+import org.apache.spark.{SparkConf, SparkContext}
 
 /**
   * Count popular hash tags in tweets stream from Kafka within given window and offset
@@ -15,7 +15,7 @@ object TweetsHashTagsByShifts {
     .setAppName("Spark Streaming - By state - PopularHashTags")
     .set("spark.executor.memory", "1g")
     //parameter for debug
-    .set("spark.streaming.kafka.maxRatePerPartition","200")
+    .set("spark.streaming.kafka.maxRatePerPartition","300")
 
   //conf.set("spark.streaming.receiver.writeAheadLog.enable", "true")
 

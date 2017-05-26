@@ -1,0 +1,24 @@
+Drop table hiverawtags;
+Drop table hivetags;
+Drop table hiveint;
+CREATE TABLE hiverawtags
+(Time BIGINT,
+ Tag STRING,
+ Counts BIGINT
+)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY " ";
+
+CREATE TABLE hiveint
+(Time BIGINT,
+ Tag STRING,
+ Counts BIGINT,
+ Allcounts BIGINT
+)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY " ";
+
+CREATE TABLE hivetags
+(Time BIGINT,
+ Tag STRING,
+ Counts BIGINT
+)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY " ";

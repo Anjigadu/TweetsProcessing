@@ -3,7 +3,7 @@ package com.grid.streaming
 import kafka.serializer.StringDecoder
 import org.apache.spark.streaming._
 import org.apache.spark.streaming.kafka.KafkaUtils
-import org.apache.spark.{SparkConf, SparkContext};
+import org.apache.spark.{SparkConf, SparkContext}
 
 /**
   * Count popular hash tags in tweets stream from Kafka within given window and offset
